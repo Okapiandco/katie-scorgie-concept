@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Katie Scorgie | Three Logo Directions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root { --ink:#0b1d33; --paper:#f3f0e9; --black:#090a09; --red:#d54128; }
+    * { box-sizing:border-box; }
+    body { margin:0; color:var(--black); background:var(--paper); font-family:Inter,Arial,sans-serif; }
+    header { padding:58px 5vw 70px; color:#fff; background:var(--black); }
+    header h1 { max-width:900px; margin:0; font-size:clamp(54px,8vw,108px); line-height:.9; letter-spacing:-.07em; }
+    header p { max-width:650px; margin:28px 0 0; font-size:18px; line-height:1.5; color:rgb(255 255 255 / .72); }
+    main { padding:0 5vw 80px; }
+    .option { padding:72px 0; border-bottom:2px solid var(--black); }
+    .option-head { display:grid; grid-template-columns:100px 1fr 1fr; gap:28px; align-items:start; margin-bottom:42px; }
+    .number { font-size:22px; }
+    .option h2 { margin:0; font-size:clamp(42px,6vw,76px); line-height:.95; letter-spacing:-.06em; }
+    .option-copy { max-width:520px; justify-self:end; font-size:17px; line-height:1.5; }
+    .board { min-height:460px; padding:40px; display:grid; grid-template-columns:1.35fr .65fr; gap:20px; align-items:stretch; background:#fff; }
+    .mark-stage, .detail-stage { display:grid; place-items:center; position:relative; overflow:hidden; }
+    .mark-stage { background:#f8f7f3; }
+    .detail-stage { color:#fff; background:var(--ink); }
+    .signature-lockup { width:min(620px,82%); text-align:center; }
+    .signature-lockup img { width:100%; display:block; }
+    .signature-lockup span { display:block; margin-top:8px; font-size:14px; letter-spacing:.48em; text-transform:uppercase; }
+    .signature-white { filter:grayscale(1) invert(1) brightness(3); }
+    .seal { width:260px; height:260px; display:grid; place-items:center; position:relative; border:1px solid currentColor; border-radius:50%; }
+    .seal::before { content:"KATIE SCORGIE · NORTH DORSET ·"; width:100%; position:absolute; top:38px; text-align:center; font-size:11px; letter-spacing:.12em; }
+    .seal strong { font-size:100px; line-height:1; letter-spacing:-.12em; }
+    .seal span { position:absolute; bottom:38px; font-size:11px; letter-spacing:.22em; text-transform:uppercase; }
+    .seal-pair { display:flex; gap:32px; align-items:center; }
+    .seal-signature { width:280px; }
+    .seal-signature img { width:100%; }
+    .editorial { width:90%; }
+    .editorial strong { display:block; font-size:clamp(58px,8vw,126px); line-height:.72; letter-spacing:-.08em; text-transform:uppercase; }
+    .editorial strong:last-of-type { margin-left:18%; }
+    .editorial img { width:270px; margin:-6px 8% 0 auto; position:relative; z-index:2; }
+    .editorial small { display:block; margin-top:28px; font-size:13px; letter-spacing:.28em; text-transform:uppercase; }
+    .mini-editorial { transform:rotate(-90deg); white-space:nowrap; font-size:23px; letter-spacing:.08em; text-transform:uppercase; }
+    .swatches { display:flex; gap:8px; margin-top:24px; }
+    .swatches i { width:36px; height:36px; display:block; border:1px solid rgb(0 0 0 / .15); }
+    .usage { margin-top:28px; display:flex; gap:24px; flex-wrap:wrap; font-size:13px; }
+    .usage span { padding-bottom:5px; border-bottom:1px solid currentColor; }
+    footer { padding:42px 5vw; display:flex; justify-content:space-between; gap:30px; color:#fff; background:var(--black); }
+    footer a { color:inherit; }
+    @media(max-width:760px){
+      .option-head { grid-template-columns:50px 1fr; }
+      .option-copy { grid-column:2; justify-self:start; }
+      .board { grid-template-columns:1fr; padding:18px; }
+      .mark-stage { min-height:360px; }
+      .detail-stage { min-height:240px; }
+      .seal-pair { flex-direction:column; }
+      footer { flex-direction:column; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Three marks.<br>One unmistakable hand.</h1>
+    <p>Every route protects Katie's genuine hand-drawn signature. The choice is how much structure we build around it: quiet artist, established house, or contemporary cultural name.</p>
+  </header>
+
+  <main>
+    <section class="option">
+      <div class="option-head"><span class="number">01</span><h2>The Artist's Signature</h2><div class="option-copy">The most personal and timeless route. The existing signature remains the hero; disciplined spacing and a restrained descriptor give it the confidence of an established artist rather than a small craft business.</div></div>
+      <div class="board">
+        <div class="mark-stage"><div class="signature-lockup"><img src="assets/katie-signature.png" alt="Katie Scorgie hand-drawn signature"><span>Fine Artist</span></div></div>
+        <div class="detail-stage"><div class="signature-lockup"><img class="signature-white" src="assets/katie-signature.png" alt=""><span>North Dorset</span></div></div>
+      </div>
+      <div class="usage"><span>Primary website mark</span><span>Painting certificates</span><span>Exhibition invitations</span></div>
+    </section>
+
+    <section class="option">
+      <div class="option-head"><span class="number">02</span><h2>The House Mark</h2><div class="option-copy">A more ownable system for labels, packaging, social icons and the studio. The KS seal behaves like a gallery stamp while the exact signature remains beside it as Katie's authorship mark.</div></div>
+      <div class="board">
+        <div class="mark-stage"><div class="seal-pair"><div class="seal"><strong>KS</strong><span>Fine Artist</span></div><div class="seal-signature"><img src="assets/katie-signature.png" alt="Katie Scorgie"></div></div></div>
+        <div class="detail-stage"><div class="seal"><strong>KS</strong><span>The Forge</span></div></div>
+      </div>
+      <div class="usage"><span>Embossing and stamps</span><span>Social avatar</span><span>Studio signage</span><span>Print packaging</span></div>
+    </section>
+
+    <section class="option">
+      <div class="option-head"><span class="number">03</span><h2>The Cultural Wordmark</h2><div class="option-copy">The boldest and most contemporary option. Katie's name becomes a confident editorial title, while the signature cuts across it like the artist signing the page. Best suited to a more international, fashion-adjacent art brand.</div></div>
+      <div class="board">
+        <div class="mark-stage"><div class="editorial"><strong>Katie</strong><strong>Scorgie</strong><img src="assets/katie-signature.png" alt="Katie Scorgie signature"><small>British fine artist · North Dorset</small></div></div>
+        <div class="detail-stage"><div class="mini-editorial">Katie Scorgie · Fine Artist</div></div>
+      </div>
+      <div class="usage"><span>Exhibitions</span><span>Editorial campaigns</span><span>Art books</span><span>Digital launches</span></div>
+    </section>
+  </main>
+
+  <footer><span>Katie Scorgie · Logo directions</span><a href="index.html">View the website concept →</a></footer>
+</body>
+</html>
